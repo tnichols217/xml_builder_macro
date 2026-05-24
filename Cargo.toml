@@ -1,0 +1,15 @@
+[package]
+name = "xml_builder_macro"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "xml_builder_test"
+path = "src/main.rs"
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies]
+anyhow = "1.0.102"
+quick-xml = "0.40.1"
