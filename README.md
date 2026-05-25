@@ -62,3 +62,22 @@ let rendered_xml = doc
 
 println!("{}", rendered_xml);
 ```
+
+produces:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<node2 xmlns="123">
+    Leading pure text block.
+    <settings a="b" inline="zzz" name="xml">
+        <node xyz="zzz">
+            <Name>123</Name>
+        </node>
+    </settings>
+    Interstitial text fragment.
+    <component status="active" arch="amd64">
+        Inside element text content
+    </component>
+    Trailing text block.
+</node2>
+```
