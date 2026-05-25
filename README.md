@@ -13,7 +13,7 @@ An easy way to build XML in rust directly in a macro.
 The `xml!` macro builds an XML out of our DSL. An element can be one of:
 
 - name, [ properties ] { body }
-- @variable
+- @variable;
 - text;
 
 The macro will parse multiple elements back to back and the name and text can be an expression.
